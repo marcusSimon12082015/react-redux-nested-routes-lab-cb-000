@@ -14,8 +14,9 @@ class PetsPage extends Component {
 
   render() {
     return (
-      <div>Pets Page
-      <PetsList pets={this.props.fetchPets()} />
+      <div>
+        <h1>Pets Page</h1>
+        <PetsList pets={this.props.fetchPets()} />
       </div>
       )
   }
