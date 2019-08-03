@@ -15,7 +15,8 @@ class PetsPage extends Component {
   render() {
     return (
       <div>Pets Page</div>
-      <PetsList pets={this.props.fetchPets()}
+      <PetsList pets={this.props.fetchPets()} />
+      <Route path="/pets/:petId"
     )
   }
 };
