@@ -16,7 +16,14 @@ class PetsPage extends Component {
     return (
       <div>
         <h1>Pets Page</h1>
-        <PetsList pets={this.props.fetchPets()} />
+        <PetsList pets={this.props.pets} />
+        <Switch>
+        <Route path="/pets/new" component={PetsNew} />
+       <Route path="/pets/:petId" component={PetsShow}/>
+       <Route exact path="/pets" render={() => (
+         <h3>Please select a Pet from the list.</h3>
+       )}/>
+        </Switch>
       </div>
       )
   }
