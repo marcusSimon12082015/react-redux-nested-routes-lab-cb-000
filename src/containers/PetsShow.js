@@ -9,7 +9,7 @@ const PetsShow = ({ pet }) =>
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    pet: {}
+    pet: state.pets.find(x => x.id === 1);
   };
 };
 
