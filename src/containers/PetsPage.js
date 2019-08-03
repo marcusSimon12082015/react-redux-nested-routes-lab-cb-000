@@ -15,7 +15,7 @@ class PetsPage extends Component {
   render() {
     return (
       <div>Pets Page</div>
-      
+
     )
   }
 };
