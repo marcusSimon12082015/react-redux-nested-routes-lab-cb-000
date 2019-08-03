@@ -14,10 +14,11 @@ class PetsPage extends Component {
 
   render() {
     return (
-      <div>Pets Page</div>
+      <div>Pets Page
       <PetsList pets={this.props.fetchPets()} />
       <Route path="/pets/:petId" component={PetsShow}/>
-    )
+      </div>
+      )
   }
 };
 
